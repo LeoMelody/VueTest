@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8c49525-4dbe-4485-8093-3d282df60c80" name="Default" comment="适当更改">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Vue.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="a8c49525-4dbe-4485-8093-3d282df60c80" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/firstVue/src/components/List.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/firstVue/src/pages/detail.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/firstVue/src/pages/home.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firstVue/package.json" afterPath="$PROJECT_DIR$/firstVue/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firstVue/src/components/HomeHead.vue" afterPath="$PROJECT_DIR$/firstVue/src/components/HomeHead.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -350,7 +343,7 @@
       <workItem from="1490324127283" duration="1776000" />
       <workItem from="1490339129405" duration="2147000" />
       <workItem from="1490576488282" duration="2827000" />
-      <workItem from="1490601152203" duration="102000" />
+      <workItem from="1490601152203" duration="117000" />
     </task>
     <task id="LOCAL-00001" summary="适当更改">
       <created>1490324241936</created>
@@ -359,11 +352,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490324241936</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="适当更改">
+      <created>1490601265386</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1490601265386</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7994000" />
+    <option name="totallyTimeSpent" value="8009000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

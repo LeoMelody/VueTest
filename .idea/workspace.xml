@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8c49525-4dbe-4485-8093-3d282df60c80" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/firstVue/src/components/Head.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/firstVue/src/components/infor.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firstVue/src/App.vue" afterPath="$PROJECT_DIR$/firstVue/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firstVue/src/components/List.vue" afterPath="$PROJECT_DIR$/firstVue/src/components/List.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firstVue/src/main.js" afterPath="$PROJECT_DIR$/firstVue/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firstVue/src/pages/detail.vue" afterPath="$PROJECT_DIR$/firstVue/src/pages/detail.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firstVue/src/pages/home.vue" afterPath="$PROJECT_DIR$/firstVue/src/pages/home.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firstVue/src/router/index.js" afterPath="$PROJECT_DIR$/firstVue/src/router/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -335,7 +326,7 @@
       <workItem from="1490339129405" duration="2147000" />
       <workItem from="1490576488282" duration="2827000" />
       <workItem from="1490601152203" duration="7172000" />
-      <workItem from="1490611162332" duration="67000" />
+      <workItem from="1490611162332" duration="83000" />
     </task>
     <task id="LOCAL-00001" summary="适当更改">
       <created>1490324241936</created>
@@ -372,11 +363,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490601371800</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="适当更改">
+      <created>1490611235671</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1490611235671</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15131000" />
+    <option name="totallyTimeSpent" value="15147000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -503,6 +501,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -550,6 +549,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -587,6 +587,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -678,6 +679,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -702,6 +704,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="2" column="46" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>

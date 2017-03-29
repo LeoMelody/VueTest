@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <transition name="slide">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 <script>
@@ -23,4 +25,33 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+.slide-leave{
+  transition: all 0.3s linear;
+  transform: translate(-100%);
+}
+.slide-enter-active{
+  transform: translate(100%);
+}
+
+/*.slide-enter-active,
+.slide_back-enter-active {
+  transition: all 0.3s linear;
+}
+.slide-leave-active {
+  position: absolute;
+  transition: all 0.3s linear;
+  transform: translate(-100%);
+}
+.slide-enter{
+  transform: translateX(100%);
+}
+.slide_back-leave-active {
+  position: absolute;
+  transition: all 0.3s linear;
+  transform: translate(100%);
+}
+.slide_back-enter {
+  transform: translateX(-100%);
+}*/
+
 </style>

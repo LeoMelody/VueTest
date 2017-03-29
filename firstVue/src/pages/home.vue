@@ -3,13 +3,13 @@
     <home-head  v-bind:title="title">
 
     </home-head>
+    <p id="name"></p>
     <list>
 
     </list>
   </div>
 </template>
 <script>
-
   import HomeHead from '../components/Head'
   import List from '../components/List'
 
@@ -24,6 +24,8 @@
           List
       }
   }
+
+
 </script>
 <style>
 

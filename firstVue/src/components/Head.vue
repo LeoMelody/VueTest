@@ -2,6 +2,8 @@
   <header class="header">
     <p>this is {{title}}</p>
   </header>
+
+
 </template>
 <script>
   export default{

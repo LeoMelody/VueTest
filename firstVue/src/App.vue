@@ -4,8 +4,13 @@
   </div>
 </template>
 <script>
-export default {
-  name: 'app'
+  import $ from 'jquery'
+  window.$ = $;
+  window.jQuery = $;
+
+  export default {
+  name: 'app',
+  $
 }
 </script>
 

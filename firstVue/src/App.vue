@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <transition name="slide">
+    <transition name="slide" mode="out-in">
       <router-view></router-view>
     </transition>
   </div>
@@ -25,33 +25,19 @@
   color: #2c3e50;
   margin-top: 60px;
 }
-.slide-leave{
-  transition: all 0.3s linear;
-  transform: translate(-100%);
-}
-.slide-enter-active{
-  transform: translate(100%);
-}
+/*过渡的动画*/
+/*定义进入和离开的变化规则*/
 
-/*.slide-enter-active,
-.slide_back-enter-active {
+
+.slide-enter-active{
   transition: all 0.3s linear;
 }
 .slide-leave-active {
-  position: absolute;
   transition: all 0.3s linear;
   transform: translate(-100%);
 }
 .slide-enter{
   transform: translateX(100%);
 }
-.slide_back-leave-active {
-  position: absolute;
-  transition: all 0.3s linear;
-  transform: translate(100%);
-}
-.slide_back-enter {
-  transform: translateX(-100%);
-}*/
 
 </style>

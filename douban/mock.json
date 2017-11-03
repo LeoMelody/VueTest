@@ -1,0 +1,78 @@
+{
+    "movie":[
+        {
+            "name": "战狼",
+            "type": "action",
+            "actors": [],
+            "director": "wj",
+            "imgUrl": ""
+        },
+        {
+            "name": "战狼",
+            "type": "action",
+            "actors": [],
+            "director": "wj",
+            "imgUrl": ""
+        },
+        {
+            "name": "战狼",
+            "type": "action",
+            "actors": [],
+            "director": "wj",
+            "imgUrl": ""
+        }
+    ],
+    "book":[],
+    "radio":[],
+    "music":[],
+    "defaultData":{
+        "username": "wyh",
+        "habit": ["movie","music"],
+        "recent": [
+            {
+                "name": "zl",
+                "type": "movie"
+            },
+            {
+                "name": "zl",
+                "type": "movie"
+            }
+        ]
+    },
+    "menu": [
+        {
+            "type": "movie",
+            "name": "电影"
+        },{
+            "type": "music",
+            "name": "音乐"
+        },{
+            "type": "book",
+            "name": "书籍"
+        },{
+            "type": "program",
+            "name": "编程"
+        },{
+            "type": "sport",
+            "name": "运动"
+        },{
+            "type": "game",
+            "name": "游戏"
+        },{
+            "type": "read",
+            "name": "阅读"
+        },{
+            "type": "group",
+            "name": "小组"
+        },{
+            "type": "television",
+            "name": "电视"
+        },{
+            "type": "application",
+            "name": "应用"
+        },{
+            "type": "location",
+            "name": "同城"
+        }
+    ]
+}

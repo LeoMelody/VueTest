@@ -1,21 +1,9 @@
 <template>
-    <div class="container">
-      <div>
-        Hello {{defaultD.username}}
-      </div>
-      <div>
-        您的爱好:
-        <ul>
-          <li v-for="item in defaultD.habit">
-            {{item}}
-          </li>
-        </ul>
-      </div>
-      <div class="form-area">
-        <input type="text" name="" id="input-name" placeholder="新的名字" v-model="username">
-        <button @click="changeName">修改</button>
-      </div>
-    </div>
+  <div>
+    <el-row>
+      <el-col :span="24"><div>1234</div></el-col>
+    </el-row>
+  </div>  
 </template>
 
 <script>
@@ -51,4 +39,5 @@ export default {
     font-size: 32px;
     line-height: 50px;
   }
+  
 </style>

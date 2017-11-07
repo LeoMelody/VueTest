@@ -1,7 +1,7 @@
 <template>
     <div class="menu-container">
         <div class="menu-head">
-            <i class="fa fa-arrow-left" @click="closeMenu">返回</i>
+            <i class="el-icon-back" @click="closeMenu">返回</i>
         </div>
         <div class="menu-body">
             <div class="list-item" v-for="(item, index) in menuList" :style="{'color': colorList[index%7]}" @click="chooseType($event,item.type)">
@@ -64,10 +64,11 @@ export default {
            width: 100%;
            border-bottom: 1px solid rgba(51, 51, 51, 0.29);
            background: #eaeaea;
-           .fa-arrow-left {
+           .el-icon-back {
                float: left;
                padding: 20px;
                color: #333;
+               cursor: pointer;
            }
        }
        .menu-body {

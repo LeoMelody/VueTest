@@ -8,7 +8,7 @@ The Vue study test of Leo
 2、npm install
 ```
 ```
-3、进入firstVue 运行 npm run dev  默认端口号为8080  可修改
+3、进入douban 运行 npm run dev  默认端口号为8080  可修改
 ```
 ```
 4、弹出Vue界面

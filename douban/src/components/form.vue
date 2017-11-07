@@ -25,17 +25,6 @@
           <el-button type="text" class="label label-left" @click="resetRadio('radio3')">恢复</el-button>  
           <span class="label-left">当前值:{{radio3}}</span>                                                       
       </div>
-      <div class="radio">
-        <span class="label">按钮单选框:</span>                  
-        <el-radio-group v-model="radio4">
-          <el-radio-button label="上海"></el-radio-button>
-          <el-radio-button label="北京"></el-radio-button>
-          <el-radio-button label="广州"></el-radio-button>
-          <el-radio-button label="深圳"></el-radio-button>
-        </el-radio-group>
-        <el-button type="text" class="label label-left" @click="resetRadio('radio4')">恢复</el-button>  
-        <span class="label-left">当前值:{{radio4}}</span> 
-      </div>
       <el-button @click="formDoc" type="text" style="font-size: 16px;margin-top: 30px;">看文档</el-button>
   </div>
 </template>
@@ -46,8 +35,7 @@ export default {
       return {
           radio: 0,
           radio2: 0,
-          radio3: 0,
-          radio4: '上海'
+          radio3: 0
       }
   },
   methods: {

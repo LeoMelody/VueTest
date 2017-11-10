@@ -1,6 +1,8 @@
 <template>
   <div>
-    1231
+    <el-menu>
+      
+    </el-menu>
   </div>
 </template>
 

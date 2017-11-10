@@ -32,7 +32,7 @@
   export default {
     data() {
       return {
-        activeIndex: '2',
+        activeIndex: '1',
         cityName: '深圳市'
       }
     },

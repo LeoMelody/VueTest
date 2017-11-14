@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import menu from './modules/menu'
 
 Vue.use(Vuex)
 
@@ -30,6 +31,9 @@ const store = new Vuex.Store({
         },
         increBynum(state, num) {
             state.count = state.count + num
+        },
+        changeIndex(state, str) {
+            state.menu.activeIndex = str
         }
     },
     getters: {
@@ -38,7 +42,13 @@ const store = new Vuex.Store({
         },
         getSeven: (state, getters) => {
             return state.personArr.filter(person => person.age < 17)
+        },
+        getIndex: (state, getters) => {
+            return state.menu.activeIndex
         }
+    },
+    modules: {
+        menu
     }
 })
 export default store

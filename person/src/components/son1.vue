@@ -1,7 +1,7 @@
 <template>
   <div>
       <span>{{son}}</span>
-      <span>{{count}}</span>
+      <span>{{activeIndex}}</span>
       <span>{{person}}</span>
       <el-button @click="increBynum(2)">按钮1</el-button>
   </div>
@@ -30,7 +30,7 @@ export default {
     count() {
       return this.$store.state.count
     },
-    ...mapState(['name']),
+    ...mapState(['name', 'activeIndex']),
     person() {
       return this.$store.getters.getSmall(18)[0].name
     }

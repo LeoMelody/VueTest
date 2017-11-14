@@ -23,16 +23,17 @@
     <!-- back -->
     <router-view style="padding-top: 60px;">
     </router-view>
-
+    <div>{{activeIndex}}</div>
     <!-- <el-footer></el-footer> -->
   </div>
 </template>
 
 <script>
+import {mapState, mapGetters} from 'vuex'
+
   export default {
     data() {
       return {
-        activeIndex: '1',
         cityName: '深圳市'
       }
     },
@@ -44,22 +45,33 @@
             this.$router.push({
               path: '/'
             })
+            this.changeIndex('1')
             break
           case '2':
             this.$router.push({
               path: '/blog'
             })
+            this.changeIndex('2')            
             break
           case '4':
             this.$router.push({
               path: '/echarts'
             })  
+            this.changeIndex('4')            
             break
         }
       },
       showDia() {
-        console.log(123)
+        
+      },
+      changeIndex(str) {
+        this.$store.commit('changeIndex', str)
       }
+    },
+    computed: {
+      ...mapGetters({
+        activeIndex: 'getIndex'
+      })
     }
   }
 </script>
@@ -83,7 +95,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    color: #2c3e50 ;
 
     .el-header {
       width: 100%;

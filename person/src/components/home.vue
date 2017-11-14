@@ -1,16 +1,21 @@
 <template>
   <div>
     <el-container class="back">
+      <transition name="zoom">
+        <el-aside class="float-box" v-show="isFloatBoxShow">
+          测试测试
+        </el-aside>      
+      </transition>
     </el-container>
     <!-- skill wrapper -->
     <el-container class="wrapper">
-      <h1>MY SKILL
+      <h2>MY SKILL
         <i class="el-icon-service"></i>
-      </h1>
+      </h2>
       <!-- some items -->
       <el-row class="skill-item">
         <el-col :span="8">
-          <img src="../assets/logo.png" alt="logo">
+          <img src="../assets/logo.png" alt="logo" class="vue-logo">
         </el-col>
         <el-col :span="16">
           <el-select v-model="styleValue" placeholder="请选择" @change="styleSelect" clearable>
@@ -60,12 +65,12 @@
           </el-row>
         </el-col>
         <el-col :span="8">
-          <img src="../assets/logo.png" alt="logo">
+          <img src="../assets/logo.png" alt="logo" class="vue-logo">
         </el-col>
       </el-row>
       <el-row class="skill-item">
         <el-col :span="8">
-          <img src="../assets/logo.png" alt="logo">
+          <img src="../assets/logo.png" alt="logo" class="vue-logo">
         </el-col>
         <el-col :span="16">
           <el-card class="skill-card">
@@ -93,9 +98,9 @@
     </el-container>
     <!-- other wrapper -->
     <el-container class="wrapper">
-      <h1>STUDY
+      <h2>STUDY
         <i class="el-icon-more-outline"></i>
-      </h1>
+      </h2>
       <div class="block">
         <el-carousel indicator-position="outside" height="512px">
           <el-carousel-item v-for="item in 4" :key="item">
@@ -138,7 +143,8 @@
         newJSItem: '',
         hasJsAdd: false,
         popText: '',
-        son: 'father'
+        son: 'father',
+        isFloatBoxShow: false
       }
     },
     methods: {
@@ -166,6 +172,9 @@
       hideJsAdd() {
         this.hasJsAdd = false
         this.newJSItem = ''
+      },
+      test() {
+        console.log('test')
       }
     },
     components: {
@@ -173,16 +182,11 @@
       'v-son2': son2
     },
     mounted() {
-      // if (window.navigator.geolocation) {
-      //   var options = {
-      //           enableHighAccuracy: true
-      //        }
-      //   debugger;     
-      //   window.navigator.geolocation.getCurrentPosition(function (position) { console.log(position) }, function () {}, options);
-      // } else {
-
-      // }
-      console.log('home-start ')
+      var that = this
+      setTimeout(function() {
+        that.isFloatBoxShow = true
+      }, 1000)
+      that.$store.commit('changeIndex', '1')
     }
   }
 </script>
@@ -198,6 +202,17 @@
     background-image: url('../assets/back.jpg');
     background-repeat: no-repeat;
     background-size: 100% 800px;
+    
+    .float-box {
+      margin: auto;
+      opacity: 0.8;
+      padding: 0;
+      height: 400px;
+      background: #fff;
+      float: left;
+      z-index: 999;
+      box-shadow: 0px 0px 10px #555;
+    }
   }
 
   .wrapper {
@@ -207,8 +222,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h1 {
+    h2 {
       margin: 20px;
+    }
+    h2:after {
+      content: '';
+      width: 80px;
+      height: 3px;
+      border: none;
+      background-color: #1d7cdc;
+      position: absolute;
+      left: 50%;
+      margin-left: -40px;
+      margin-top: 40px;
     }
     .skill-item {
       width: 950px;
@@ -230,6 +256,17 @@
         }
         .el-button {
           margin-top: 10px;
+        }
+      }
+      .vue-logo {
+        filter: grayscale(30%);
+        transition: transform .5s;
+        cursor: pointer;
+      }
+      .vue-logo:hover {
+        & {
+          filter: grayscale(0);
+          transform: scale(1.15)
         }
       }
     }

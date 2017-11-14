@@ -64,6 +64,9 @@
     <transition name="fadeRightBig">
       <v-menu v-show="show" :show="show"></v-menu>    
     </transition>
+    <div v-for="(e,i) in recent" ref="wrap">
+
+    </div>
   </div>
 </template>
 
@@ -77,7 +80,8 @@ export default {
   data() {
     return {
       defaultData: {},
-      show: false
+      show: false,
+      recent: ['']
     }
   },
   methods: {
@@ -124,9 +128,11 @@ export default {
         response = response.body
         if (response.errno === ERR_OK) {
           this.defaultData = response.data
-          console.log(response)
+          this.recent = response.data.recent
         }
       })
+    console.log(this.$refs, this.$refs.wrap.length)
+    console.log(this.$refs.wrap.length)  
   },
   components: {
     'v-head': header,

@@ -1,3 +1,9 @@
 @function carousel-back($n) {
     @return url('../assets/'+ $n + '.png')
 }
+
+
+
+@function randomColor($n) {
+    
+}

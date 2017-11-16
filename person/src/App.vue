@@ -14,8 +14,11 @@
           <el-menu-item index="4">ECHARTS</el-menu-item>
           <el-menu-item index="5">FUTURE</el-menu-item>
         </el-menu>
+        <el-popover ref="popover1" placement="bottom-start" :title="cityName+`天气`" width="200" trigger="hover" :content="content">
+
+        </el-popover>
         <h2 @mouseenter="showDia">
-          <i class="el-icon-location-outline">{{cityName}}</i>
+          <i class="el-icon-location-outline" v-popover:popover1>{{cityName}}</i>
         </h2>
       </div>
     </el-header>
@@ -23,7 +26,6 @@
     <!-- back -->
     <router-view style="padding-top: 60px;">
     </router-view>
-    <div>{{activeIndex}}</div>
     <!-- <el-footer></el-footer> -->
   </div>
 </template>
@@ -34,7 +36,8 @@ import {mapState, mapGetters} from 'vuex'
   export default {
     data() {
       return {
-        cityName: '深圳市'
+        cityName: '深圳市',
+        content: '深圳市深圳市深圳市深圳市深圳市深圳市深圳市'
       }
     },
     methods: {
@@ -59,6 +62,18 @@ import {mapState, mapGetters} from 'vuex'
             })  
             this.changeIndex('4')            
             break
+          case '5':
+            this.$router.push({
+              path: '/future'
+            })  
+            this.changeIndex('5')
+            break
+          default:
+            this.$router.push({
+              path: '/'
+            })
+            this.changeIndex('1')
+            break
         }
       },
       showDia() {
@@ -82,21 +97,18 @@ import {mapState, mapGetters} from 'vuex'
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 60px;
   }
-
   .text {
-    font-family: 'Microsoft YaHei', 'Arial Narrow', Arial, sans-serif;
-    line-height: 24px;
-    font-size: 16px;
-    text-align: left;
+      font-family: 'Microsoft YaHei', 'Arial Narrow', Arial, sans-serif;
+      line-height: 24px;
+      font-size: 16px;
+      text-align: left;
   }
-
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50 ;
-
     .el-header {
       width: 100%;
       padding-top: 0;

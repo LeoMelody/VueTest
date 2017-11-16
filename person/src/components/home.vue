@@ -110,19 +110,10 @@
       </div>
     </el-container>
     <el-aside></el-aside>
-    <v-son1 :son="son">
-
-    </v-son1>
-    <v-son2 :son="son">
-
-    </v-son2>
   </div>
 </template>
 
 <script>
-  import son1 from '@/components/son1'
-  import son2 from '@/components/son2'
-
   export default {
     name: 'app',
     data() {
@@ -176,10 +167,6 @@
       test() {
         console.log('test')
       }
-    },
-    components: {
-      'v-son1': son1,
-      'v-son2': son2
     },
     mounted() {
       var that = this
@@ -248,6 +235,9 @@
       }
       .el-col-16 {
         padding: 10px 0;
+        .text {
+          text-align: left;
+        }
         .el-col {
           padding: 10px 0;
           .el-input-number {

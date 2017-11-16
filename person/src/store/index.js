@@ -1,26 +1,29 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import VueResource from 'vue-resource'
 import menu from './modules/menu'
+import blog from './modules/blog'
 
 Vue.use(Vuex)
+Vue.use(VueResource)
+const ERR_OK = 0
 
 const store = new Vuex.Store({
     state: {
-        count: 1,
-        name: 'wyh',
-        personArr: [{
-            name: 'aaa',
-            age: 18
-        }, {
-            name: 'bbb',
-            age: 16
-        }, {
-            name: 'ccc',
-            age: 19
-        }]
+       
     },
     actions: {
-
+        getJsBlog() {
+            Vue.http.get('../../static/mock.json', {
+                params: {
+                    
+                }
+            })
+            .then(response => {
+                response = response.body
+                this.state.blog.jsBlog = response.jsBlog       
+            })
+        }
     },
     mutations: {
         increment(state) {
@@ -48,7 +51,8 @@ const store = new Vuex.Store({
         }
     },
     modules: {
-        menu
+        menu,
+        blog
     }
 })
 export default store

@@ -4,6 +4,7 @@ import Home from '@/components/home'
 import Blog from '@/components/blog'
 import Echarts from '@/components/echarts'
 import JS from '@/components/JavaScript'
+import Future from '@/components/future'
 
 Vue.use(Router)
 
@@ -31,6 +32,11 @@ export default new Router({
       path: '/echarts',
       name: 'Echarts',
       component: Echarts
+    },
+    {
+      path: '/future',
+      name: 'Future',
+      component: Future
     }
   ]
 })
